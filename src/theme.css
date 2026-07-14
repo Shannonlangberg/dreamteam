@@ -1,0 +1,121 @@
+/* ============================================================
+   Futures Church — brand design tokens
+   Source: FUT002 Brand Guidelines V1.0
+   Colors, type, and spacing for the Dreamteam book-redemption app.
+   ============================================================ */
+
+@font-face {
+  font-family: "Rhymes Display";
+  src: url("./assets/fonts/Rhymes Display Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rhymes Display";
+  src: url("./assets/fonts/Rhymes Display Light Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gal Gothic";
+  src: url("./assets/fonts/GalGothic-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gal Gothic";
+  src: url("./assets/fonts/GalGothic-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gal Gothic";
+  src: url("./assets/fonts/GalGothic-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gal Gothic";
+  src: url("./assets/fonts/GalGothic-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ---- Brand palette (FUT002) ---- */
+  --fc-thistle-green: #C5C6A4;
+  --fc-dark-brown: #50482E;
+  --fc-brown: #765020;
+  --fc-orange: #FF8432;
+  --fc-copper: #C45236;
+  --fc-electric-violet: #5D1FEC;
+  --fc-sky-blue: #62B4FF;
+  --fc-laser-lemon: #FFFF5F;
+  --fc-pink: #E444B9;
+
+  /* ---- Semantic roles for this app ---- */
+  --color-bg: #FFFDF7;
+  --color-surface: #FFFFFF;
+  --color-text: var(--fc-dark-brown);
+  --color-text-muted: var(--fc-brown);
+  --color-primary: var(--fc-copper);
+  --color-primary-contrast: #FFFFFF;
+  --color-accent: var(--fc-orange);
+  --color-success: #3C7A3E;
+  --color-success-bg: #E9F3E7;
+  --color-warning-bg: #FFF6DA;
+  --color-warning-border: var(--fc-orange);
+  --color-danger: var(--fc-copper);
+  --color-danger-bg: #FBEAE5;
+  --color-border: #E7E3D2;
+
+  /* ---- Type ---- */
+  --font-display: "Rhymes Display", "Times New Roman", Times, serif;
+  --font-body: "Gal Gothic", Arial, Helvetica, sans-serif;
+
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-card: 0 8px 30px rgba(80, 72, 46, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  margin: 0 0 0.4em 0;
+  color: var(--color-text);
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+a {
+  color: inherit;
+}
