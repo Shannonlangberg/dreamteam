@@ -39,6 +39,10 @@
   padding: 12px 0 8px;
 }
 
+.screen__header--hero {
+  padding: 16px 16px 0;
+}
+
 .screen__logo {
   height: auto;
   width: min(220px, 70%);
